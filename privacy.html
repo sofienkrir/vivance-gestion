@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Confidentialité – Vivance Gestion</title>
+  <meta name="description" content="Règles de confidentialité de l'application Vivance Gestion.">
+  <style>
+    :root { --bg:#faf8f5; --text:#1f1d1a; --muted:#6b655d; --accent:#8a5a2b; --line:#e7e1d8; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#161412; --text:#f2eee8; --muted:#a8a094; --accent:#d9a46a; --line:#332e29; }
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background:var(--bg); color:var(--text); line-height:1.65; }
+    main { max-width: 720px; margin: 0 auto; padding: 56px 20px; }
+    h1 { font-size: 2rem; margin: 0 0 4px; }
+    .date { color: var(--muted); margin: 0 0 32px; }
+    h2 { font-size: 1.2rem; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+    ul { padding-left: 20px; }
+    a { color: var(--accent); }
+    code { font-size: 0.95em; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Règles de confidentialité</h1>
+    <p class="date">Vivance Gestion · Dernière mise à jour : 5 octobre 2026</p>
+
+    <p>Cette page explique quelles données l'application de bureau Vivance Gestion utilise, où elles sont stockées et comment elle utilise Google Drive.</p>
+
+    <h2>1. Données gérées par l'application</h2>
+    <p>Vivance Gestion enregistre les données nécessaires à la gestion de la boutique : fiches clients (dont nom et numéro de téléphone), produits, stock et ventes. Ces données sont stockées dans une base de données locale, sur l'ordinateur où l'application est installée.</p>
+    <p>Le développeur n'a pas accès à ces données. L'application n'envoie aucune donnée au développeur, à un serveur tiers ou à un service de statistiques.</p>
+
+    <h2>2. Utilisation de Google Drive</h2>
+    <p>Si l'utilisateur choisit de connecter son compte Google, l'application envoie automatiquement une copie de sa base de données sur le Google Drive de ce compte, afin de pouvoir récupérer les données en cas de panne ou de perte de l'ordinateur.</p>
+    <ul>
+      <li><strong>Autorisation demandée :</strong> uniquement <code>drive.file</code>. L'application ne peut accéder qu'aux fichiers qu'elle a elle-même créés.</li>
+      <li><strong>Ce que l'application ne fait pas :</strong> elle ne lit pas, ne liste pas et ne modifie pas les autres fichiers du Google Drive de l'utilisateur.</li>
+      <li><strong>Ce que l'application fait :</strong> créer un dossier de sauvegarde, y déposer les copies de la base, mettre à jour la copie du jour, supprimer les copies les plus anciennes selon la règle de conservation, et lire ces copies pour une restauration.</li>
+      <li><strong>Informations du compte :</strong> l'application affiche l'adresse e-mail du compte connecté pour que l'utilisateur sache où partent ses sauvegardes.</li>
+    </ul>
+
+    <h2>3. Stockage des autorisations</h2>
+    <p>Le jeton d'accès fourni par Google est conservé uniquement sur l'ordinateur de l'utilisateur, chiffré et lié à sa session Windows. Il n'est jamais inclus dans les sauvegardes et n'est jamais transmis au développeur.</p>
+
+    <h2>4. Partage des données</h2>
+    <p>Les données ne sont ni vendues, ni louées, ni partagées avec qui que ce soit. Les sauvegardes restent dans le Google Drive de l'utilisateur, sous son seul contrôle.</p>
+
+    <h2>5. Conformité aux règles de Google</h2>
+    <p>L'utilisation et le transfert par Vivance Gestion des informations reçues des API Google respectent les <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">règles relatives aux données utilisateur des services d'API Google</a> (Google API Services User Data Policy), y compris les exigences d'utilisation limitée (Limited Use).</p>
+
+    <h2>6. Révoquer l'accès et supprimer les données</h2>
+    <ul>
+      <li>Déconnecter Google Drive depuis les paramètres de l'application, ou retirer l'accès à tout moment sur <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
+      <li>Les fichiers de sauvegarde déjà envoyés peuvent être supprimés directement depuis Google Drive.</li>
+      <li>Les données locales sont supprimées en désinstallant l'application et en effaçant son dossier de données.</li>
+    </ul>
+
+    <h2>7. Contact</h2>
+    <p>Pour toute question : <a href="mailto:[VOTRE EMAIL]">[VOTRE EMAIL]</a> · [VOTRE NOM]</p>
+
+    <p><a href="index.html">← Retour à l'accueil</a></p>
+  </main>
+</body>
+</html>
